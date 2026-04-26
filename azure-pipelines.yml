@@ -4,11 +4,11 @@
 # https://docs.microsoft.com/azure/devops/pipelines/languages/java
 
 trigger:
-- master
+- main
 
 pool:
   name: Default
 
 steps:
-  -script: echo "Build Successful"
-  displayName: Run simple command
+- script: echo "Hello Maven Pipeline"
+  displayName: Run command
